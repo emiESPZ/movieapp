@@ -1,0 +1,91 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.7);
+  z-index: 9999;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 42rem;
+  background-color: rgba(34, 34, 34, 0.7);
+  flex-direction: column;
+  border-radius: 8%;
+}
+
+.modalTitle {
+  margin-left: -15px;
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -420px;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  position: fixed;
+}
+
+.modalRegister {
+  margin-left: 65px;
+  cursor: pointer;
+  background-color: rgb(255, 0, 0, 0.4);
+  padding: 15px;
+}
+
+button {
+  all: unset;
+  color: white;
+}
+.modalRegister:hover {
+  background-color: rgb(255, 0, 0, 0.6);
+}
+
+.modalLogin {
+  margin-right: 65px;
+  cursor: pointer;
+  background-color: rgb(255, 0, 0, 0.4);
+  padding: 15px 28px 15px 28px;
+}
+
+.modalLogin:hover {
+  background-color: rgb(255, 0, 0, 0.6);
+}
+
+.modalBody {
+  margin-bottom: -5rem;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalButtons {
+  margin-top: 475px;
+  position: fixed;
+}
+
+.submitButton {
+  margin-right: 28px;
+  background-color: rgba(240, 226, 226, 0.4);
+  padding: 12px 20px 12px 20px;
+}
+
+.cancelButton {
+  background-color: rgba(240, 226, 226, 0.4);
+  padding: 12px 20px 12px 20px;
+}
+
+.submitButton:hover {
+  background-color: rgba(240, 226, 226, 0.6);
+}
+
+.cancelButton:hover {
+  background-color: rgba(240, 226, 226, 0.6);
+}

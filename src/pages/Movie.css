@@ -1,0 +1,172 @@
+.movieCardContainer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.movieCard {
+  background-color: white;
+  width: 70rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: row;
+}
+.imgContainer {
+  width: 260px;
+  height: 350px;
+  overflow: hidden;
+  margin-left: 25px;
+  position: fixed;
+}
+
+.movieTitle {
+  align-self: center;
+  margin-top: -305px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 65px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.genres {
+  display: flex;
+  margin-left: 305px;
+  height: 15px;
+  width: 100%;
+  position: fixed;
+}
+
+.genre {
+  display: flex;
+  color: black;
+  padding: 0;
+  height: 15px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.movieOverview {
+  margin-top: 55px;
+  margin-left: 305px;
+  padding: 0;
+  width: 100%;
+}
+
+.overview {
+  font-size: 15px;
+  text-decoration: none;
+  text-align: justify;
+  width: 750px;
+  background-color: white;
+  color: black;
+}
+
+.overviewNot {
+  display: none;
+}
+
+.genreName {
+  height: 15px;
+  margin-right: 15px;
+}
+
+.trailerButtonOff {
+  background-color: rgba(240, 226, 226, 0.9);
+  padding: 12px 20px 12px 20px;
+  color: red;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 85px;
+  margin-top: 375px;
+  cursor: pointer;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.46);
+}
+
+.trailerButtonOff:hover {
+  margin-top: 372px;
+}
+
+.backArrowButton:hover {
+  margin-left: 1px;
+}
+
+.trailerButtonOn {
+  display: none;
+}
+
+.trailerBackground {
+  width: 70rem;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  margin-left: -1425px;
+  margin-top: 165px;
+  background-image: url('../assets/sl_121019_25870_78.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 98;
+}
+
+.trailer {
+  z-index: 99;
+  position: fixed;
+  margin-left: 5px;
+  margin-top: 65px;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(255, 255, 255, 0.46);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(255, 255, 255, 0.46);
+  box-shadow: 0px 0px 26px 0px rgba(255, 255, 255, 0.46);
+}
+
+.closeButton {
+  margin-left: 1100px;
+  margin-top: -590px;
+  z-index: 99;
+  color: red;
+  position: fixed;
+  cursor: pointer;
+}
+
+.closeButtonOff {
+  display: none;
+}
+
+.closeButton:hover {
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(255, 0, 0, 1);
+  box-shadow: 0px 0px 26px 0px rgba(255, 0, 0, 1);
+}
+
+.noTrailerText {
+  position: fixed;
+  margin-left: 520px;
+  margin-top: 255px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.moviePictureNot {
+  display: none;
+}
+
+.imgContainerNot {
+  display: none;
+}

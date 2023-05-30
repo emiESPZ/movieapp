@@ -1,0 +1,45 @@
+.navBar {
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 12px 0 12px 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  color: red;
+  margin-left: 12px;
+  font-stretch: expanded;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.navLi {
+  margin-left: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.navLi:hover {
+  color: rgb(231, 231, 231);
+  text-shadow: rgb(255, 23, 23) 1px 0 10px;
+}
+
+.userIcon {
+  margin-left: 82rem;
+  width: 28px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.userIcon:hover {
+  color: rgb(231, 231, 231);
+  text-shadow: rgb(255, 23, 23) 1px 0 10px;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;400;500;700;900&family=Trade+Winds&display=swap');
+
+.popularMovieCardItem {
+  position: relative;
+  width: 225px;
+  height: 120px;
+  margin-right: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 3%;
+}
+
+.popularMovieTitle {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  box-sizing: border-box;
+  top: 5;
+  z-index: 85;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 82;
+  position: relative;
+}
+
+p {
+  z-index: 92;
+  position: absolute;
+  background-color: #141414;
+}
+
+.popularMovieInfo {
+  display: none;
+}
+
+.popularMoreInfo {
+  top: 116px;
+
+  left: 172px;
+}
+.votes {
+  margin-left: 5px;
+}
+
+.circle {
+  width: 5px;
+  align-self: center;
+  margin-left: 7px;
+  margin-right: 1px;
+}
+
+.infoCircle {
+  margin-right: 5px;
+  margin-left: -12px;
+}
