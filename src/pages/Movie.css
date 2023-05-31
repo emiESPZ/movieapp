@@ -114,17 +114,23 @@
 }
 
 .trailerBackground {
-  width: 70rem;
+  width: 72rem;
   height: 38rem;
   display: flex;
   justify-content: center;
-  margin-left: -1425px;
-  margin-top: 165px;
+  margin-left: -1130px;
+  margin-top: -145px;
   background-image: url('../assets/sl_121019_25870_78.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 98;
+  position: fixed;
 }
+
+/* .trailerContainer {
+  width: 100%;
+  height: 100%;
+} */
 
 .trailer {
   z-index: 99;

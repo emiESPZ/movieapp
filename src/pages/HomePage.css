@@ -8,7 +8,6 @@
   margin-bottom: -635px;
   top: 0;
   position: relative;
-  z-index: 86;
 }
 
 .headerImg {
@@ -19,11 +18,11 @@
 
 .movieList {
   margin-bottom: 40px;
-  z-index: 23;
+  z-index: 48;
   position: absolute;
 }
 
 .navBar {
-  position: absolute;
+  position: fixed;
   z-index: 96;
 }

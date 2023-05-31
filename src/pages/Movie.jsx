@@ -12,6 +12,7 @@ const Movie = () => {
   const apiImage = import.meta.env.VITE_API_IMAGE;
   const [playTrailer, setPlayTrailer] = useState(false);
   const [hasTrailer, setHasTrailer] = useState(false);
+  const [imageOff, setImageOff] = useState(false);
   const {
     selectedMovie,
     fetchPopularMovies,
@@ -56,8 +57,10 @@ const Movie = () => {
 
       if (trailer && trailer.key) {
         return (
-          <div className='trailerBackground'>
-            <YouTube className='trailer' videoId={trailer.key} />
+          <div className='trailerContainer'>
+            <div className='trailerBackground'>
+              <YouTube className='trailer' videoId={trailer.key} />
+            </div>
           </div>
         );
       } else {
@@ -87,6 +90,7 @@ const Movie = () => {
                 marginTop: '-163px',
                 marginLeft: '1050px',
                 cursor: 'pointer',
+                zIndex: '99',
               }}
             />
           </button>
@@ -99,17 +103,9 @@ const Movie = () => {
             X
           </button>
           <div className='cardBody'>
-            <div
-              className={
-                playTrailer && hasTrailer ? 'imgContainerNot' : 'imgContainer'
-              }
-            >
+            <div className={'imgContainer'}>
               <img
-                className={
-                  playTrailer && !hasTrailer
-                    ? 'moviePictureNot'
-                    : 'moviePicture'
-                }
+                className={setImageOff ? 'moviePicture' : 'moviePictureNot'}
                 src={`${apiImage}/original/${selectedMovie.poster_path}`}
                 alt={selectedMovie.title}
               ></img>
@@ -127,13 +123,7 @@ const Movie = () => {
 
             <div className={'movieOverview'}>
               Overview:
-              <p
-                className={
-                  playTrailer && hasTrailer ? 'overviewNot' : 'overview'
-                }
-              >
-                {selectedMovie.overview}
-              </p>
+              <p className={'overview'}>{selectedMovie.overview}</p>
             </div>
 
             {playTrailer && showTrailer()}

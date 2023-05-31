@@ -2,11 +2,7 @@
   height: 750px;
   align-items: center;
   justify-content: center;
-  z-index: 45;
-}
-
-.headerImg {
-  z-index: 45;
+  z-index: 40;
 }
 
 .modal {

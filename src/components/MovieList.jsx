@@ -14,7 +14,7 @@ function MovieList() {
     useContext(MovieContext);
 
   useEffect(() => {
-    fetchPopularMovies(3);
+    fetchPopularMovies();
   }, []);
   console.log(popularMovies);
 
